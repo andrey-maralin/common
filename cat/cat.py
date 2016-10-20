@@ -1,5 +1,4 @@
 from sys import stdout
-result_file_name = 'result.txt'
 
 
 def cat(*args):
