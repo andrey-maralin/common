@@ -1,7 +1,6 @@
 def squeeze(seq):
     seq = iter(seq)
-    prev_elem = next(seq)
-    yield prev_elem
+    prev_elem = None
     for i in seq:
         if i != prev_elem:
             prev_elem = i
