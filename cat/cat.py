@@ -15,7 +15,6 @@ def cat(*args):
             except IOError:
                 print "File {0} wasn't found!".format(file_name)
                 continue
-        print
     return line_number
 
 
