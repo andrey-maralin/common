@@ -10,7 +10,8 @@ def cat(*args):
                 with open(file_name, 'r') as f:
                     for line in f:
                         line_number += 1
-                        out.write(line + '\n')
+                        out.write(line)
+                    out.write('\n')
             except IOError:
                 print "File {0} wasn't found!".format(file_name)
                 continue
