@@ -1,4 +1,5 @@
 def squeeze(seq):
+    seq = iter(seq)
     prev_elem = next(seq)
     yield prev_elem
     for i in seq:
@@ -10,5 +11,6 @@ def squeeze(seq):
 
 
 if __name__ == "__main__":
-    print list(squeeze(iter([1, 2, 2, 100, 0, 0, 5])))
-    print list(squeeze(iter((2, 4, 5, 5, 5, 6, 7, 7, 5, 2, 4))))
+    print list(squeeze([1, 2, 2, 100, 0, 0, 5]))
+    print list(squeeze((2, 4, 5, 5, 5, 6, 7, 7, 5, 2, 4)))
+    print list(squeeze(()))
