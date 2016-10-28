@@ -1,6 +1,7 @@
 # coding=UTF-8
 
 import re
+import sys
 import random
 
 
@@ -30,8 +31,8 @@ def get_result(text):
         else:
             print text
     else:
-        print "Проверьте правильность расстановки [ и ] в введенном тексте."
+        print 'Проверьте правильность расстановки [ и ] в введенном тексте.'
 
 if __name__ == "__main__":
-    text = raw_input("Введите текст:")
+    text = sys.argv[1]
     get_result(text)
