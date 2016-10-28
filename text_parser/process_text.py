@@ -32,7 +32,7 @@ def get_result(text):
 
 
 if __name__ == "__main__":
-    text = sys.argv[1]
+    text = sys.argv[1].decode("cp1251")
     if is_valid_text(text):
         get_result(text)
     else:
